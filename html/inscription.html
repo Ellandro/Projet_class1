@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/inscription.css">
+    <title>Université ivoiro-senegalaise</title>
+</head>
+<body>
+    <header>
+        <div class="logo_head">
+            <img src="../image/logo2.webp" alt="université">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../html/part1.html">candidat</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="menu_head">
+            <ul>
+                <li><a href="#"> Connexion</a></li>
+                <li><a href="#"> A propos</a></li>
+            </ul>
+        </div>
+        
+    </header>
+    <h1>S'inscrire a l'université Ivoiro-senegalaise</h1>
+    <form action="">
+       <div class="formule">
+        <div class="formulaire">
+            <label for="prenom">Prénom(s) <span>*</span></label>
+            <input type="text" name="prenom" required>
+            <i class="bx bx-user"></i>
+            <label for="nom">Nom <span>*</span></label>
+            <input type="text" name="nom" required>
+            <label for="mail">E-mail <span>*</span></label>
+            <input type="email" name="mail" required>
+            <label for="date">Date de naissance <span>*</span></label>
+            <input type="date" name="date" required placeholder="">
+
+           
+    </div>
+    
+    <div class="formulaire1">
+        <label for="tel">Numero de telephone <span>*</span></label>
+        <input type="tel" name="tel" required pattern="[0-9]{10}">
+        <label for="candidat">Candidatures <span>*</span></label>
+        <select name="candidat" id="cars" required default="select">
+            <option value="boursier">Selectionner</option>
+          <option value="boursier">Boursier</option>
+          <option value="admission">Admission</option>
+          <option value="ligne">En ligne</option>
+        </select>
+        <label for="pass">Mot de passe <span>*</span></label>
+        <input type="password" name="pass" required>
+        <label for="confirm">Confirmation <span>*</span></label>
+        <input type="password" name="confirm" required placeholder="">
+    </div>
+    
+</div>
+<input type="submit" value="Inscription">
+    </form>
+    <footer>
+        <div class="footer">
+             <img src="../image/Facebook.png" alt="Facebook.png">
+             <img src="../image" alt="instagram.png">
+             <img src="../image/twitter.jpg" alt="">
+        </div>
+        &COPY;Université ivoiro-senegalaise 2023 
+    </footer>
+</body>
+</html>
