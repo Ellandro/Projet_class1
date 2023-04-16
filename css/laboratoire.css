@@ -82,6 +82,10 @@ li a{
     font-size: 60px;
     letter-spacing: 5px;
 }
+.deux p{
+    margin: 0rem 5rem;
+    font-size: 15px;
+}
 .trois{
     margin: 20px;
     background-image: url("../image/hommenoir.jpg");

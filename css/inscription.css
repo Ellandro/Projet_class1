@@ -170,14 +170,18 @@ input[type="submit"]{
 }
 footer{
     background-color: #ccc;
-    padding-bottom: 15px;
-    text-align: center;
-}
-.footer{
-    margin-right: 80%;
-    padding: 15px;
+    margin: 0pc;
+    display: flex;
+    justify-content: space-around;
+   
 }
 footer img{
+    margin-top: 15px;
     max-width: 50px;
-    border-radius: 15px;
+    border-radius: 50%;
+}
+footer p{
+    font-family: "Ubuntu";
+    font-size: 2rem;
+    /* color: #fff; */
 }
