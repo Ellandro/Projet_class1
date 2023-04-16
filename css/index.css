@@ -1,11 +1,15 @@
 
+@font-face {
+    font-family: ubuntu;
+    src: url("//font/Ubuntu-Regular.ttf");
+}
 body{
     margin: 0px;
     padding: 0px;
     /* background-color: rgba(9, 16, 63, 0.867); */
 
 }
-/* @keyframes fonds{
+@keyframes fonds{
     0%{
         background-image: url("../image/Composant-13-10.png");
     }
@@ -13,7 +17,7 @@ body{
         background-image: url("../image/Composant-13-11.png");
     }
     50%{
-        background-image: url("../image/univ_bat.jpg");
+        background-image: url("../image/robor.jpg");
     }
     75%{
         background-image: url("../image/Composant-13-13.png");
@@ -21,7 +25,7 @@ body{
     100%{
         background-image: url("../image/etudiant.jpg");
     }
-} */
+}
 /* Définir la largeur de la barre de défilement */
 ::-webkit-scrollbar {
     width: 3px;
@@ -43,7 +47,7 @@ header{
     border-radius: 50%;
     margin: 10px;
 }
-nav{
+/* nav{
     margin-left: 585px;
 }
 nav ul{
@@ -81,7 +85,7 @@ nav ul li:hover ul{
     background-color: #fff;
     border: 1px solid black;
     border-radius: 0px 0px 15px 15px;
-}
+} */
 
 .menu_head ul{
     display: flex;
@@ -135,15 +139,16 @@ li a{
     margin-left: 10%;
 }
 .text_pre p{
-    margin-left: 10%;
+    margin-left: 5%;
     color: #fff;
     font-size: 20px;
+    font-family: "Ubuntu";
 }
 .text_pre{
     background-color: rgb(9, 29, 83);
     width: 100%;
     margin-top: -50px;
-    height: 200px;
+    height: 210px;
 }
 h1{
     text-align: center;
@@ -154,115 +159,48 @@ h3{
     font-size: 2rem;
     color: #fff;
 }
-.parcours1{
-    display: flex;
-    gap: 55px;
-    padding: 2rem 2rem;
+.sous-parcours img{
+    width: 100%;
+    margin-top: 50px;
+    transition: all 0.5s linear;
 }
-h2{
-    margin-top: 150px;
-    font-size: 35px;
-    text-align: center;
+.sous-parcours img:hover{
+    filter:grayscale(0.5);
+}
+.parcours{
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+.sous-parcours{
+    display: flex;
+    gap: 15px;
+    flex-direction: row-reverse;
+    border-radius: 10px;
+    width: 500px;
+    height: 300px;
+    /* display: flex; */
+   
+    
+}
+
+.sous{
+     /* border: 2px  solid #131212; */
+     margin-top: 20px;
+}
+.sous li{
+    list-style: none;
+    border: 1px solid black;
+    width: 5rem;
+    padding: 10px;
+    transition: all 1s;
+}
+.sous li:hover{
+    background-color: #0a0a0a;
     color: #fff;
-}
-.decou{
-    border: 0.2px  solid #fff;
-    border-radius: 10px;
-    width: 400px;
-    height: 300px;
-    background-image: url("../image/lune.jpg");
-    background-size: 140%;
-    background-repeat: no-repeat;
-}
-.decou p{
-    color: white;
-    margin:10px 20px 0px 10px;
-    font-size: 16px;
-
-}
-.info{
-    border: 0.2px  solid #fff;
-    border-radius: 10px;
-    width: 400px;
-    height: 300px;
-    background-image: url("../image/inform.jpg");
-    background-size: 140%;
-    background-repeat: no-repeat;
-
-}
-.info p{
-    color: white;
-    margin: 0px 20px; 
-    font-size: 18px;
-}
-.devel{
-    border: 0.2px  solid #fff;
-    border-radius: 10px;
-    width: 400px;
-    height: 300px;
-    background-image: url("../image/femme.jpg");
-    background-size:140%;
-    background-repeat: no-repeat; 
-}
-.devel h2{
-    margin:130 0px 0px 0px;
-}
-.devel p{
-    color: white;
-   
-    font-size: 20px;
-}
-.parcours2{
-    display: flex;
-    gap: 55px;
-    padding: 2rem 2rem;
-}
-.phys{
-    border: 0.2px  solid #fff;
-    border-radius: 10px;
-    width: 400px;
-    height: 300px;
-    background-image: url("../image/physi.jpg");
-    background-size: 140%;
-    background-repeat: no-repeat;
-}
-.phys p{
-    color: white;
-    margin: 0px 20px;
-    font-size: 18px; 
-}
-.bio{
-    border: 0.2px  solid #fff;
-    border-radius: 10px;
-    width: 400px;
-    height: 300px;
-    background-image: url("../image/univ_b.jpg");
-    background-size: 140%;
-    background-repeat: no-repeat;
-    
-}
-.bio p{
-    color: white;
-    margin: 0px 20px; 
-    font-size: 17px;
+    cursor: pointer;
 }
 
-.math{
-    border: 0.2px  solid #fff;
-    border-radius: 10px;
-    width: 400px;
-    height: 300px;
-    background-image: url("../image/math1.webp");
-    background-size: 140%;
-    background-repeat: no-repeat;
-   
-    
-}
-.math p{
-    color: white;
-    margin: 0px 20px; 
-    font-size: 18px;
-}
 .univers{
     width: 100%;
 }
@@ -295,11 +233,16 @@ footer{
     background-color: #ccc;
     margin: 0pc;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
    
 }
 footer img{
     margin-top: 15px;
     max-width: 50px;
     border-radius: 50%;
+}
+footer p{
+    font-family: "Ubuntu";
+    font-size: 2rem;
+    /* color: #fff; */
 }
